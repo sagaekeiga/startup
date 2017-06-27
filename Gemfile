@@ -30,6 +30,8 @@ gem "nokogiri"
 
 gem 'mysql2'
 gem "ransack"
+gem 'extractcontent', github: 'mono0x/extractcontent'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

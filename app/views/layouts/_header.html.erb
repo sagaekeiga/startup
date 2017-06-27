@@ -1,0 +1,21 @@
+
+<div class="ui segment">
+  <h3 class="ui right aligned header">
+    <%= link_to "新規登録", new_entry_path, { :class => "ui teal basic button" } %>
+  </h3>
+  <h2 class="ui center aligned icon header">
+    <%= image_tag("masara.png") %>
+    <div class="content">
+      マサラビレッジ
+      <div class="sub header">スタートアップに関する情報を配信</div>
+    </div>
+  </h2>
+  <h3 class="ui center aligned header">
+    <%= search_form_for @q,  html: {class: 'ui input'} do |f| %>
+    
+      <%= f.search_field :title_cont %>
+    
+      <%= f.submit %>
+    <% end %>
+  </h3>
+</div>

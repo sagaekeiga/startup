@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/mono0x/extractcontent.git
+  revision: 6dc303ab5ad90ada73a8b63c29dc0b99591afabd
+  specs:
+    extractcontent (0.0.1)
+
+GIT
   remote: https://github.com/doabit/semantic-ui-sass.git
   revision: 48f03deab9131ad1583eda53c16b3eb83e11c178
   specs:
@@ -193,6 +199,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rbenv
   coffee-rails (~> 4.1.0)
+  extractcontent!
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
