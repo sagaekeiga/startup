@@ -54,7 +54,7 @@ class EntriesController < ApplicationController
               .gsub(/\//, "").gsub(/\[/, "").gsub(/\]/, "").gsub(/\(/, "").gsub(/\)/, "").gsub(/\./, "").gsub(/\,/, "")
               .gsub(/\;/, "").gsub(/\:/, "").gsub(/\{/, "").gsub(/\}/, "").gsub(/\¥/, "").gsub(/\~/, "").gsub(/\=/, "")
               .gsub(/\_/, "").gsub(/\#/, "").gsub(/\&/, "").gsub(/\'/, "").gsub(/\"/, "").gsub(/\|/, "").gsub(/\@/, "")
-              .gsub(/\>/, "").gsub(/\</, "").gsub(/\-/, "").gsub(/\$/, "") + "..."
+              .gsub(/\>/, "").gsub(/\</, "").gsub(/\-/, "").gsub(/\$/, "").gsub(/\%/, "").gsub(/'/, "").gsub(/\\/, "") + "..."
               p "content"
           @entry.save!
       redirect_to root_path
